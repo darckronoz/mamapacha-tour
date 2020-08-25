@@ -125,7 +125,7 @@ nav ul li a{
   float: right;
   margin: 0 auto;
   width: 20%
-  height:auto;
+  height: auto;
   padding: 1%;
 }
 .one-third-padding {
@@ -212,7 +212,7 @@ overflow: auto;
     display: inline-block;
 
   }
-  nav:hoover ul {
+  nav:hover ul {
     display: block;
   }
   nav ul, nav:active ul{
