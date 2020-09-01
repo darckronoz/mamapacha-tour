@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro | MamapachaTours</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <img class="avatar" src="img/logo_login.png" alt="logo MamapachaTours">
+      <h1>Registrate</h1>
+      <form action="http://localhost/phpmyadmin/save.php" method="POST">
+        <!-- Email -->
+        <label for="email">Correo Electronico</label>
+        <input type="email" placeholder="alguien@algo.com" required>
+
+        <!-- primer nombre -->
+        <label for="firstname">Nombres</label>
+        <input type="text" placeholder="Nombre" required>
+
+        <!-- primer nombre -->
+        <label for="lastname">Apellidos</label>
+        <input type="text" placeholder="apellidos" required>
+
+        <!-- celphone -->
+        <label for="celphone">Número de Celular</label>
+        <input type="tel" placeholder="+57 3123456789" required>
+
+        <!-- primer nombre -->
+        <label for="description">Descripción negocio/emprendimiento</label>
+        <textarea id="description" name="description" placeholder="escribe una breve descripcion sobre tu negocio/emprendimiento" rows="8" cols="80"></textarea>
+
+        <input type="submit" value="Enviar mis datos">
+
+        <!--<a href="#">¿olvidaste tu contraseña?</a><br>
+        <a href="#">¿no tienes una cuenta?</a>-->
+      </form>
+    </div>
+  </body>
+</html>

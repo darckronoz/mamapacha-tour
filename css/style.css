@@ -12,7 +12,7 @@ body {
   background-color: #fff;
 }
 p {
-  color: #524c56;
+  color: #0d4f0a;
   font-size: 160%;
   line-height: 155%;
   padding: 3%;
@@ -23,7 +23,7 @@ h3 {
   font-size: 175%;
   line-height: 155%;
   font-weight: 500;
-  color: #524c56;
+  color: #073603;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
@@ -60,9 +60,15 @@ header {
   left: 0;
 }
 header #logo img {
-  margin: 15px;
+  margin: -3px 30px 10px auto;
   float: left;
-  width: 150px;
+  width: 100px;
+}
+header h3 {
+  float: left;
+  margin: 40px auto auto -40px;
+  font-size: 15px;
+  color: #006400;
 }
 /*Navigation*/
 nav {
@@ -92,16 +98,35 @@ nav ul li a{
 }
 
 .one-third {
-  width: 31.5%;
+  width: 23%;
   float: left;
   padding: 10px;
   text-align: center;
 }
-
+.one-third p{
+  color: #0d4f0a;
+  font-size: 160%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent: 2%;
+  text-align: center;
+}
+.one-third h3 {
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 100%;
+  font-weight: 300;
+  color: #073603;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .icon-wrap {
   margin: 0 auto;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #6991ac;
   border-radius: 125px;
   text-align: center;
@@ -111,34 +136,116 @@ nav ul li a{
 .icon-wrap i {
   text-align: center;
   color: #fff;
-  font-size: 450%;
+  font-size: 400%;
   padding: 20%;
 }
-.left-col {
-  float: left;
+.center-platform {
+  float: center;
   margin: 0 auto;
   width: 60%;
   height: auto;
   padding: 1%;
 }
+.center-platform h3 {
+  font-size: 175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #0F8C0D;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+.center-platform p {
+  color: #0F8C0D;
+  text-align: center;
+}
+.center-platform .bottom-line {
+  font-size: 30px;
+}
 .side-bar {
-  float: right;
-  margin: 0 auto;
+  margin: -5% auto -6% auto;
   width: 20%
   height: auto;
   padding: 1%;
 }
 .one-third-padding {
-width:  29%;
+width:  29.2%;
 float: left;
 margin: 2%;
+}
+.one-third-padding p{
+  color: #0d4f0a;
+  font-size: 160%;
+  line-height: 155%;
+  text-indent: 2.5%;
+  text-align: justify;
 }
 .clearfix-padding {
   clear: both;
   padding: 2%;
 }
+.bottom-line {
+  font-weight: bold;
+  margin: -41px auto auto;
+  font-size: 150%;
+  text-align: center;
+}
+.contacts-section-title h3{
+  font-weight: bold;
+  font-size: 300%;
+  text-align: left;
+  margin: 50px 10px auto 100px;
+  color: #5FB740 ;
+  font-family: arial;
+}
+.contacts-bottom-line h3{
+  font-weight: bold;
+  font-size: 500%;
+  text-align: left;
+  margin: -97px 1px 50px 100px;
+  color: #20A48B;
+}
+#contacts-section {
+  margin: auto 200px;
+  background: #DDFFD2;
+  width: 52%;
+  overflow: hidden;
+  opacity: 90%;
+  border: solid;
+  border-color: #1FB065;
+  border-style: inset;
+  border-width: 10px;
+}
+#contacts-list h3{
+  color: #20A48B;
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: left;
+  margin: 50px auto 20px 110px;
+  padding: 1%;
+  font-family: arial;
+}
+#contacts-list a{
+  color: #5fb740;
+  font-size: 100%;
+  text-align: left;
+  margin: auto auto 80px 115px;
+  padding: 1%;
+  font-family: arial;
+}
+#contacts-list a:hover{
+  color: #4A91D0;
+ }
+.contacts-pic {
+  float: right;
+  margin: -500px -300px -0px auto;
+  width: 20%
+  height: auto;
+  padding: 1%;
+}
 footer {
-background: #2c3e50;
+background: #8FBC8F;
 width: 100%;
 overflow: auto;
 }
@@ -162,11 +269,11 @@ overflow: auto;
 
 .footer-nav a {
   font-size: 160%;
-  color: #c3d7df;
+  color: #006400;
   font-weight: 300;
 }
-.footer-nav a hoover {
-  color: #f5f5f5;
+.footer-nav a:hover {
+  color: #fff;
 }
 .social {
   text-align: center;
@@ -187,30 +294,28 @@ overflow: auto;
 }
 .footer-second p, .footer-second a {
   text-align: center;
-  color: #fff;
-  font-size: 160%;
-  line-height: 165%;
+  color: #8FBC8F;
+  font-size: 100%;
+  line-height: 50%;
 }
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 880px) {
   p {
     font-size: 130%;
-
   }
   h3 {
     font-size: 150%;
   }
   header {
-    height: 100px;
+    height: 80px;
     position: relative;
   }
-
   header #logo {
     margin: 15px 0 20px -25px;
   }
 
   #menu-icon {
     display: inline-block;
-
   }
   nav:hover ul {
     display: block;
